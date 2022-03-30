@@ -1,0 +1,137 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Arvo", serif;
+  --font-code: "Roboto", monospace;
+  --bg-color: #89619b;
+  --bg-color-transparent: #22c5e6e7;
+  --font-color: #eeeeee;
+  --btn-bg-color: #9b0606;
+  --accent-color: #bf8ada;
+  --header-shadow: var(--accent-color) 0px 0px 5px;
+  --card-shadow: var(--accent-color) 0px 0px 20px;
+  --font-family: 'Roboto', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  color: var(--font-color);
+  font-family: var(--font-primary);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+
+h1 {
+  text-shadow: 2px 2px 0 rgb(13, 14, 13);
+  font-style: oblique;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+  
+}
+
+h2 {
+  text-shadow: 2px 2px 0 rgb(11, 12, 11);
+  font-family: 'Roboto', sans-serif;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+  
+}
+
+
+header {
+  background-color: var(--bg-color);
+  box-shadow: var(--header-shadow);
+}
+
+header .container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.team {
+  background: var(--bg-color);
+  text-align: center;
+  padding: 3rem 0;
+}
+.team h1 {
+  color: #7c88f3;
+  text-shadow: 2px 2px 0 #3b333b;
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+}
+.team h2 {
+  color: #9096f0;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.team .row {
+  display: flex;
+}
+.team .row img {
+  width: 100%;
+  padding: 0 2rem;
+}
+footer {
+  text-align: center;
+  font-weight: bold;
+  padding: 2rem 0;
+  background: var(--accent-color);
+  color: var(--bg-color);
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 25vw;
+    margin-right: 10vw;
+  }
+  .menu {
+    gap: 1rem;
+  }
+  .menu img {
+    width: 5vw;
+  }
+  
+  .team {
+    padding: 2rem 0;
+  }
+  .team h1 {
+    font-size: 2.5rem;
+  }
+  .team .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hidden {
+  display: none;
+  }
+}
